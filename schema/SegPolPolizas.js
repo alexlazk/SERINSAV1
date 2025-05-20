@@ -1,0 +1,51 @@
+cube(`SegPolPolizas`, {
+  sql: `SELECT * FROM seg_pol_polizas`,
+
+  measures: {
+    count: {
+      type: 'count',
+    },
+  },
+
+  dimensions: {
+    pol_codigo: { sql: 'pol_codigo', type: 'number' },
+    pol_codpom: { sql: 'pol_codpom', type: 'number' },
+    pol_codimf: { sql: 'pol_codimf', type: 'number' },
+    pol_codsui: { sql: 'pol_codsui', type: 'number' },
+    pol_codcli: { sql: 'pol_codcli', type: 'number' },
+    pol_codasp: { sql: 'pol_codasp', type: 'number' },
+    pol_codprd: { sql: 'pol_codprd', type: 'number' },
+    pol_coddpr: { sql: 'pol_coddpr', type: 'number' },
+    pol_codpro: { sql: 'pol_codpro', type: 'number' },
+    pol_tipo: { sql: 'pol_tipo', type: 'string' },
+    pol_fecha: { sql: 'pol_fecha', type: 'time' },
+    pol_solicitud: { sql: 'pol_solicitud', type: 'string' },
+    pol_certificado: { sql: 'pol_certificado', type: 'string' },
+    pol_certificado_original: { sql: 'pol_certificado_original', type: 'string' },
+    pol_fecha_inicio: { sql: 'pol_fecha_inicio', type: 'time' },
+    pol_fecha_final: { sql: 'pol_fecha_final', type: 'time' },
+    pol_forma_pago: { sql: 'pol_forma_pago', type: 'string' },
+    pol_periodo: { sql: 'pol_periodo', type: 'string' },
+    pol_numero_pagos: { sql: 'pol_numero_pagos', type: 'number' },
+    pol_monto: { sql: 'pol_monto', type: 'number' },
+    pol_prima: { sql: 'pol_prima', type: 'string' },
+    pol_impuestos: { sql: 'pol_impuestos', type: 'string' },
+    pol_suma_asegurada: { sql: 'pol_suma_asegurada', type: 'string' },
+    pol_recargo: { sql: 'pol_recargo', type: 'string' },
+    pol_prima_mensual: { sql: 'pol_prima_mensual', type: 'string' },
+    pol_observaciones: { sql: 'pol_observaciones', type: 'string' },
+    pol_seguros: { sql: 'pol_seguros', type: 'string' },
+    pol_estatura: { sql: 'pol_estatura', type: 'string' },
+    pol_peso: { sql: 'pol_peso', type: 'string' },
+    pol_codpol_origen: { sql: 'pol_codpol_origen', type: 'number' },
+    pol_codcau_anulacion: { sql: 'pol_codcau_anulacion', type: 'number' },
+    pol_estado: { sql: 'pol_estado', type: 'string' },
+    pol_codusr_registra: { sql: 'pol_codusr_registra', type: 'number' },
+    pol_ip_registra: { sql: 'pol_ip_registra', type: 'string' },
+    pol_fecha_registra: { sql: 'pol_fecha_registra', type: 'time' },
+    mes: { sql: 'mes', type: 'string' },
+    fecha: { sql: 'fecha', type: 'time' },
+    hoy: { sql: 'hoy', type: 'string' },
+    ventana*: { sql: 'ventana*', type: 'string' }
+  }
+});
