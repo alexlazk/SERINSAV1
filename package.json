@@ -1,0 +1,15 @@
+{
+  "name": "serinsa-cubejs",
+  "version": "0.1.0",
+  "description": "Proyecto base CubeJS para KPIs de Serinsa",
+  "scripts": {
+    "dev": "cubejs server",
+    "generate": "python3 scripts/generate_cubes.py"
+  },
+  "dependencies": {
+    "@cubejs-backend/server": "^0.33.0",
+    "@cubejs-backend/mssql-driver": "^0.33.0",
+    "mssql": "^9.0.1",
+    "dotenv": "^16.0.3"
+  }
+}
