@@ -43,7 +43,9 @@ cube(`{cube_name}`, {{
   }}
 }});
 """
-        Path(output_dir, f"{cube_name}.js").write_text(cube_js.strip(), encoding='utf-8')
+        out_file = Path(output_dir, f"{cube_name}.js")
+        out_file.write_text(cube_js.strip(), encoding='utf-8')
+        print(f"Generated {out_file}")
 
 if __name__ == '__main__':
     generate_schema('Database_structure.json')
